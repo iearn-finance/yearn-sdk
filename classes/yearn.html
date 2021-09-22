@@ -1,0 +1,442 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Yearn | @yfi/sdk</title>
+	<meta name="description" content="Documentation for @yfi/sdk">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@yfi/sdk</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@yfi/sdk</a>
+				</li>
+				<li>
+					<a href="yearn.html">Yearn</a>
+				</li>
+			</ul>
+			<h1>Class Yearn&lt;T&gt;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p><a href="yearn.html">Yearn</a> is a wrapper for all the services and interfaces of the SDK.</p>
+					</div>
+					<p>Yearn namespace can be instantiated as a class, providing configuration
+					options that will then be used by all the services and interfaces:</p>
+					<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Yearn</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@yfi/sdk&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">provider</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">JsonRpcProvider</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;http://localhost:8545&quot;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">yearn</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Yearn</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, { </span><span style="color: #001080">provider</span><span style="color: #000000"> });</span>
+</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="../modules.html#chainid" class="tsd-signature-type" data-tsd-kind="Type alias">ChainId</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Yearn</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"><a href="yearn.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#earnings" class="tsd-kind-icon">earnings</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#fees" class="tsd-kind-icon">fees</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#ironbank" class="tsd-kind-icon">iron<wbr>Bank</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#ready" class="tsd-kind-icon">ready</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#services" class="tsd-kind-icon">services</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#simulation" class="tsd-kind-icon">simulation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#strategies" class="tsd-kind-icon">strategies</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#tokens" class="tsd-kind-icon">tokens</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="yearn.html#vaults" class="tsd-kind-icon">vaults</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="yearn.html#setchainid" class="tsd-kind-icon">set<wbr>Chain<wbr>Id</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Yearn&lt;T&gt;<span class="tsd-signature-symbol">(</span>chainId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/contextvalue.html" class="tsd-signature-type" data-tsd-kind="Interface">ContextValue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="yearn.html" class="tsd-signature-type" data-tsd-kind="Class">Yearn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L69">src/yearn.ts:69</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new SDK instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">250</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1337</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>chainId: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5>context: <a href="../interfaces/contextvalue.html" class="tsd-signature-type" data-tsd-kind="Interface">ContextValue</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>plain object containing all the optional configuration</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="yearn.html" class="tsd-signature-type" data-tsd-kind="Class">Yearn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="context.html" class="tsd-signature-type" data-tsd-kind="Class">Context</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L58">src/yearn.ts:58</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="earnings" class="tsd-anchor"></a>
+					<h3>earnings</h3>
+					<div class="tsd-signature tsd-kind-icon">earnings<span class="tsd-signature-symbol">:</span> <a href="earningsinterface.html" class="tsd-signature-type" data-tsd-kind="Class">EarningsInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L52">src/yearn.ts:52</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="fees" class="tsd-anchor"></a>
+					<h3>fees</h3>
+					<div class="tsd-signature tsd-kind-icon">fees<span class="tsd-signature-symbol">:</span> <a href="feesinterface.html" class="tsd-signature-type" data-tsd-kind="Class">FeesInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L53">src/yearn.ts:53</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ironbank" class="tsd-anchor"></a>
+					<h3>iron<wbr>Bank</h3>
+					<div class="tsd-signature tsd-kind-icon">iron<wbr>Bank<span class="tsd-signature-symbol">:</span> <a href="ironbankinterface.html" class="tsd-signature-type" data-tsd-kind="Class">IronBankInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L54">src/yearn.ts:54</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ready" class="tsd-anchor"></a>
+					<h3>ready</h3>
+					<div class="tsd-signature tsd-kind-icon">ready<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L69">src/yearn.ts:69</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>This promise can be <strong>optionally</strong> awaited to assure that all services
+							have been correctly loaded.</p>
+						</div>
+						<pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">yearn</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Yearn</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, { </span><span style="color: #001080">provider</span><span style="color: #000000"> });</span>
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">yearn</span><span style="color: #000000">.</span><span style="color: #001080">ready</span><span style="color: #000000">;</span>
+</code></pre>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="services" class="tsd-anchor"></a>
+					<h3>services</h3>
+					<div class="tsd-signature tsd-kind-icon">services<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>asset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AssetService</span><span class="tsd-signature-symbol">; </span>helper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HelperService</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>lens<span class="tsd-signature-symbol">: </span><a href="lensservice.html" class="tsd-signature-type" data-tsd-kind="Class">LensService</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>meta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MetaService</span><span class="tsd-signature-symbol">; </span>oracle<span class="tsd-signature-symbol">: </span><a href="oracleservice.html" class="tsd-signature-type" data-tsd-kind="Class">OracleService</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>pickle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PickleService</span><span class="tsd-signature-symbol">; </span>subgraph<span class="tsd-signature-symbol">: </span><a href="subgraphservice.html" class="tsd-signature-type" data-tsd-kind="Class">SubgraphService</a><span class="tsd-signature-symbol">; </span>telegram<span class="tsd-signature-symbol">: </span><a href="telegramservice.html" class="tsd-signature-type" data-tsd-kind="Class">TelegramService</a><span class="tsd-signature-symbol">; </span>vision<span class="tsd-signature-symbol">: </span><a href="visionservice.html" class="tsd-signature-type" data-tsd-kind="Class">VisionService</a><span class="tsd-signature-symbol">; </span>zapper<span class="tsd-signature-symbol">: </span><a href="zapperservice.html" class="tsd-signature-type" data-tsd-kind="Class">ZapperService</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L35">src/yearn.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>asset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AssetService</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>helper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HelperService</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>lens<span class="tsd-signature-symbol">: </span><a href="lensservice.html" class="tsd-signature-type" data-tsd-kind="Class">LensService</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>meta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MetaService</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>oracle<span class="tsd-signature-symbol">: </span><a href="oracleservice.html" class="tsd-signature-type" data-tsd-kind="Class">OracleService</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>pickle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PickleService</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>subgraph<span class="tsd-signature-symbol">: </span><a href="subgraphservice.html" class="tsd-signature-type" data-tsd-kind="Class">SubgraphService</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>telegram<span class="tsd-signature-symbol">: </span><a href="telegramservice.html" class="tsd-signature-type" data-tsd-kind="Class">TelegramService</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>vision<span class="tsd-signature-symbol">: </span><a href="visionservice.html" class="tsd-signature-type" data-tsd-kind="Class">VisionService</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>zapper<span class="tsd-signature-symbol">: </span><a href="zapperservice.html" class="tsd-signature-type" data-tsd-kind="Class">ZapperService</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="simulation" class="tsd-anchor"></a>
+					<h3>simulation</h3>
+					<div class="tsd-signature tsd-kind-icon">simulation<span class="tsd-signature-symbol">:</span> <a href="simulationinterface.html" class="tsd-signature-type" data-tsd-kind="Class">SimulationInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L55">src/yearn.ts:55</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="strategies" class="tsd-anchor"></a>
+					<h3>strategies</h3>
+					<div class="tsd-signature tsd-kind-icon">strategies<span class="tsd-signature-symbol">:</span> <a href="strategyinterface.html" class="tsd-signature-type" data-tsd-kind="Class">StrategyInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L56">src/yearn.ts:56</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="tokens" class="tsd-anchor"></a>
+					<h3>tokens</h3>
+					<div class="tsd-signature tsd-kind-icon">tokens<span class="tsd-signature-symbol">:</span> <a href="tokeninterface.html" class="tsd-signature-type" data-tsd-kind="Class">TokenInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L51">src/yearn.ts:51</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="vaults" class="tsd-anchor"></a>
+					<h3>vaults</h3>
+					<div class="tsd-signature tsd-kind-icon">vaults<span class="tsd-signature-symbol">:</span> <a href="vaultinterface.html" class="tsd-signature-type" data-tsd-kind="Class">VaultInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L50">src/yearn.ts:50</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setchainid" class="tsd-anchor"></a>
+					<h3>set<wbr>Chain<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Chain<wbr>Id<span class="tsd-signature-symbol">(</span>chainId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">250</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1337</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/yearn.ts#L103">src/yearn.ts:103</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>chainId: <span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">250</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1337</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-has-type-parameter">
+						<a href="yearn.html" class="tsd-kind-icon">Yearn</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="yearn.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#earnings" class="tsd-kind-icon">earnings</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#fees" class="tsd-kind-icon">fees</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#ironbank" class="tsd-kind-icon">iron<wbr>Bank</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#ready" class="tsd-kind-icon">ready</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#services" class="tsd-kind-icon">services</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#simulation" class="tsd-kind-icon">simulation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#strategies" class="tsd-kind-icon">strategies</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#tokens" class="tsd-kind-icon">tokens</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="yearn.html#vaults" class="tsd-kind-icon">vaults</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="yearn.html#setchainid" class="tsd-kind-icon">set<wbr>Chain<wbr>Id</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

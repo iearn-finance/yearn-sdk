@@ -1,0 +1,898 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@yfi/sdk</title>
+	<meta name="description" content="Documentation for @yfi/sdk">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@yfi/sdk</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@yfi/sdk</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Welcome to the Yearn SDK documentation.</p>
+					</div>
+					<a href="#yearn-namespace" id="yearn-namespace" style="color: inherit; text-decoration: none;">
+						<h2>Yearn namespace</h2>
+					</a>
+					<p><a href="classes/yearn.html">Yearn</a> is a wrapper for all the services and interfaces of the SDK.</p>
+					<a href="#interfaces" id="interfaces" style="color: inherit; text-decoration: none;">
+						<h3>Interfaces</h3>
+					</a>
+					<ul>
+						<li><a href="classes/vaultinterface.html">VaultInterface</a> asset aggregation for yearn&#39;s v1 &amp; v2 vaults.</li>
+						<li><a href="classes/ironbankinterface.html">IronBankInterface</a> asset aggregation form iron bank products.</li>
+						<li><a href="classes/tokeninterface.html">TokenInterface</a> utility function for ERC20 and balances.</li>
+						<li><a href="classes/earningsinterface.html">EarningsInterface</a> historical earnings.</li>
+						<li><a href="classes/feesinterface.html">FeesInterface</a> historical fees collected by yearn.</li>
+					</ul>
+					<a href="#services" id="services" style="color: inherit; text-decoration: none;">
+						<h3>Services</h3>
+					</a>
+					<p>SDK is divided in services representing the different data sources for
+					yearn products and the access method used to read / write from them.</p>
+					<ul>
+						<li><a href="classes/lensservice.html">LensService</a>: provides access to yearn&#39;s assets and user position.</li>
+						<li>→ <a href="classes/registryv2adapter.html">RegistryV2Adapter</a>: adapter of V2 vaults.</li>
+						<li>→ <a href="classes/ironbankadapter.html">IronBankAdapter</a>: adapter of iron bank assets.</li>
+						<li><a href="classes/oracleservice.html">OracleService</a>: pricing engine used for calculations.</li>
+						<li><a href="classes/zapperservice.html">ZapperService</a>: interaction with zapper public API.</li>
+						<li><a href="classes/visionservice.html">VisionService</a>: interaction with yearn&#39;s product stats aggregator.</li>
+						<li><a href="classes/subgraphservice.html">SubgraphService</a>: interaction with yearn&#39;s subgraph.</li>
+						<li>[[SimulationService]]: allows simulation of ethereum transactions.</li>
+						<li><a href="classes/telegramservice.html">TelegramService</a>: allows sending telegram messages.</li>
+					</ul>
+					<a href="#peer-dependencies" id="peer-dependencies" style="color: inherit; text-decoration: none;">
+						<h3>Peer dependencies</h3>
+					</a>
+					<p>SDK requires several dependencies from the ethers.js project.</p>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum"><a href="enums/zapprotocol.html" class="tsd-kind-icon">Zap<wbr>Protocol</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/context.html" class="tsd-kind-icon">Context</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/earningsinterface.html" class="tsd-kind-icon">Earnings<wbr>Interface</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/feesinterface.html" class="tsd-kind-icon">Fees<wbr>Interface</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/ironbankadapter.html" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Adapter</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/ironbankinterface.html" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Interface</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/lensservice.html" class="tsd-kind-icon">Lens<wbr>Service</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/oracleservice.html" class="tsd-kind-icon">Oracle<wbr>Service</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/registryv2adapter.html" class="tsd-kind-icon">Registry<wbr>V2Adapter</a></li>
+								<li class="tsd-kind-class"><a href="classes/sdkerror.html" class="tsd-kind-icon">Sdk<wbr>Error</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/simulationinterface.html" class="tsd-kind-icon">Simulation<wbr>Interface</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/strategyinterface.html" class="tsd-kind-icon">Strategy<wbr>Interface</a></li>
+								<li class="tsd-kind-class"><a href="classes/subgraphservice.html" class="tsd-kind-icon">Subgraph<wbr>Service</a></li>
+								<li class="tsd-kind-class"><a href="classes/telegramservice.html" class="tsd-kind-icon">Telegram<wbr>Service</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/tokeninterface.html" class="tsd-kind-icon">Token<wbr>Interface</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/vaultinterface.html" class="tsd-kind-icon">Vault<wbr>Interface</a></li>
+								<li class="tsd-kind-class"><a href="classes/visionservice.html" class="tsd-kind-icon">Vision<wbr>Service</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/yearn.html" class="tsd-kind-icon">Yearn</a></li>
+								<li class="tsd-kind-class"><a href="classes/zapperservice.html" class="tsd-kind-icon">Zapper<wbr>Service</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/accountassetposition.html" class="tsd-kind-icon">Account<wbr>Asset<wbr>Position</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/accounthistoricearnings.html" class="tsd-kind-icon">Account<wbr>Historic<wbr>Earnings</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/accountsummary.html" class="tsd-kind-icon">Account<wbr>Summary</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/alias.html" class="tsd-kind-icon">Alias</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/allowance.html" class="tsd-kind-icon">Allowance</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/apy.html" class="tsd-kind-icon">Apy</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/assetdynamic.html" class="tsd-kind-icon">Asset<wbr>Dynamic</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/assetearnings.html" class="tsd-kind-icon">Asset<wbr>Earnings</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/assethistoricearnings.html" class="tsd-kind-icon">Asset<wbr>Historic<wbr>Earnings</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/assetstatic.html" class="tsd-kind-icon">Asset<wbr>Static</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/balance.html" class="tsd-kind-icon">Balance</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/chainmetadata.html" class="tsd-kind-icon">Chain<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/contextvalue.html" class="tsd-kind-icon">Context<wbr>Value</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/cytokenusermetadata.html" class="tsd-kind-icon">Cy<wbr>Token<wbr>User<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/depositoptions.html" class="tsd-kind-icon">Deposit<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/erc20.html" class="tsd-kind-icon">ERC20</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/earningsassetdata.html" class="tsd-kind-icon">Earnings<wbr>Asset<wbr>Data</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/earningsdaydata.html" class="tsd-kind-icon">Earnings<wbr>Day<wbr>Data</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/earningsuserdata.html" class="tsd-kind-icon">Earnings<wbr>User<wbr>Data</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/gasprice.html" class="tsd-kind-icon">Gas<wbr>Price</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/historicearnings.html" class="tsd-kind-icon">Historic<wbr>Earnings</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ironbankmarketmetadata.html" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Market<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ironbankusersummary.html" class="tsd-kind-icon">Iron<wbr>Bank<wbr>User<wbr>Summary</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/position.html" class="tsd-kind-icon">Position</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/simulationoptions.html" class="tsd-kind-icon">Simulation<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/strategiesmetadata.html" class="tsd-kind-icon">Strategies<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/strategymetadata.html" class="tsd-kind-icon">Strategy<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/token.html" class="tsd-kind-icon">Token</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/tokenallowance.html" class="tsd-kind-icon">Token<wbr>Allowance</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/tokenamount.html" class="tsd-kind-icon">Token<wbr>Amount</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/tokenbalance.html" class="tsd-kind-icon">Token<wbr>Balance</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/tokenmetadata.html" class="tsd-kind-icon">Token<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/tokenprice.html" class="tsd-kind-icon">Token<wbr>Price</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/transactionoutcome.html" class="tsd-kind-icon">Transaction<wbr>Outcome</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/vaultmetadata.html" class="tsd-kind-icon">Vault<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/vaultmetadataoverrides.html" class="tsd-kind-icon">Vault<wbr>Metadata<wbr>Overrides</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/vaultusermetadata.html" class="tsd-kind-icon">Vault<wbr>User<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/vaultsusersummary.html" class="tsd-kind-icon">Vaults<wbr>User<wbr>Summary</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/withdrawoptions.html" class="tsd-kind-icon">Withdraw<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/zapapprovalstateoutput.html" class="tsd-kind-icon">Zap<wbr>Approval<wbr>State<wbr>Output</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/zapapprovaltransactionoutput.html" class="tsd-kind-icon">Zap<wbr>Approval<wbr>Transaction<wbr>Output</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/zapoptions.html" class="tsd-kind-icon">Zap<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/zapoutput.html" class="tsd-kind-icon">Zap<wbr>Output</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="modules.html#address" class="tsd-kind-icon">Address</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#aliasmap" class="tsd-kind-icon">Alias<wbr>Map</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#apymap" class="tsd-kind-icon">Apy<wbr>Map</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#asset" class="tsd-kind-icon">Asset</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#balancesmap" class="tsd-kind-icon">Balances<wbr>Map</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#chainid" class="tsd-kind-icon">Chain<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#genericasset" class="tsd-kind-icon">Generic<wbr>Asset</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#icon" class="tsd-kind-icon">Icon</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#iconmap" class="tsd-kind-icon">Icon<wbr>Map</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#integer" class="tsd-kind-icon">Integer</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#ironbankmarket" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Market</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#ironbankmarketdynamic" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Market<wbr>Dynamic</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#ironbankmarketstatic" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Market<wbr>Static</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#metadata" class="tsd-kind-icon">Metadata</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#typeid" class="tsd-kind-icon">Type<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#typedmap" class="tsd-kind-icon">Typed<wbr>Map</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#usdc" class="tsd-kind-icon">Usdc</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vault" class="tsd-kind-icon">Vault</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vaultdynamic" class="tsd-kind-icon">Vault<wbr>Dynamic</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vaultstatic" class="tsd-kind-icon">Vault<wbr>Static</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vaultv1" class="tsd-kind-icon">Vault<wbr>V1</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vaultv1dynamic" class="tsd-kind-icon">Vault<wbr>V1Dynamic</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vaultv1static" class="tsd-kind-icon">Vault<wbr>V1Static</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vaultv2" class="tsd-kind-icon">Vault<wbr>V2</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vaultv2dynamic" class="tsd-kind-icon">Vault<wbr>V2Dynamic</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vaultv2static" class="tsd-kind-icon">Vault<wbr>V2Static</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="address" class="tsd-anchor"></a>
+					<h3>Address</h3>
+					<div class="tsd-signature tsd-kind-icon">Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/common.ts#L12">src/types/common.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Type alias for an address type.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="aliasmap" class="tsd-anchor"></a>
+					<h3>Alias<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">Alias<wbr>Map&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="modules.html#typedmap" class="tsd-signature-type" data-tsd-kind="Type alias">TypedMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="interfaces/alias.html" class="tsd-signature-type" data-tsd-kind="Interface">Alias</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/custom/assets.ts#L16">src/types/custom/assets.ts:16</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#address" class="tsd-signature-type" data-tsd-kind="Type alias">Address</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="apymap" class="tsd-anchor"></a>
+					<h3>Apy<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">Apy<wbr>Map&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="modules.html#typedmap" class="tsd-signature-type" data-tsd-kind="Type alias">TypedMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="interfaces/apy.html" class="tsd-signature-type" data-tsd-kind="Interface">Apy</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/custom/vault.ts#L33">src/types/custom/vault.ts:33</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#address" class="tsd-signature-type" data-tsd-kind="Type alias">Address</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="asset" class="tsd-anchor"></a>
+					<h3>Asset</h3>
+					<div class="tsd-signature tsd-kind-icon">Asset&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="interfaces/assetstatic.html" class="tsd-signature-type" data-tsd-kind="Interface">AssetStatic</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><a href="interfaces/assetdynamic.html" class="tsd-signature-type" data-tsd-kind="Interface">AssetDynamic</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>typeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/asset.ts#L76">src/types/asset.ts:76</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Union of both <a href="interfaces/assetstatic.html">AssetStatic</a> and <a href="interfaces/assetdynamic.html">AssetDynamic</a> parts.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>dev</dt>
+							<dd><p><code>{ typeId: T }</code> is included in the union to make <code>Metadata[T]</code> work.</p>
+							</dd>
+						</dl>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#typeid" class="tsd-signature-type" data-tsd-kind="Type alias">TypeId</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="balancesmap" class="tsd-anchor"></a>
+					<h3>Balances<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">Balances<wbr>Map&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="modules.html#typedmap" class="tsd-signature-type" data-tsd-kind="Type alias">TypedMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="interfaces/balance.html" class="tsd-signature-type" data-tsd-kind="Interface">Balance</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/custom/token.ts#L31">src/types/custom/token.ts:31</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#address" class="tsd-signature-type" data-tsd-kind="Type alias">Address</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="chainid" class="tsd-anchor"></a>
+					<h3>Chain<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Chain<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Chains</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/chain.ts#L14">src/chain.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="genericasset" class="tsd-anchor"></a>
+					<h3>Generic<wbr>Asset</h3>
+					<div class="tsd-signature tsd-kind-icon">Generic<wbr>Asset<span class="tsd-signature-symbol">:</span> <a href="modules.html#asset" class="tsd-signature-type" data-tsd-kind="Type alias">Asset</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;VAULT_V1&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#asset" class="tsd-signature-type" data-tsd-kind="Type alias">Asset</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;VAULT_V2&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#asset" class="tsd-signature-type" data-tsd-kind="Type alias">Asset</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;IRON_BANK_MARKET&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/asset.ts#L81">src/types/asset.ts:81</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Possible assets that lens can return.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="icon" class="tsd-anchor"></a>
+					<h3>Icon</h3>
+					<div class="tsd-signature tsd-kind-icon">Icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/custom/assets.ts#L6">src/types/custom/assets.ts:6</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An URL pointing to an image/png file.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="iconmap" class="tsd-anchor"></a>
+					<h3>Icon<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">Icon<wbr>Map&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="modules.html#typedmap" class="tsd-signature-type" data-tsd-kind="Type alias">TypedMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="modules.html#icon" class="tsd-signature-type" data-tsd-kind="Type alias">Icon</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/custom/assets.ts#L8">src/types/custom/assets.ts:8</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#address" class="tsd-signature-type" data-tsd-kind="Type alias">Address</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="integer" class="tsd-anchor"></a>
+					<h3>Integer</h3>
+					<div class="tsd-signature tsd-kind-icon">Integer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/common.ts#L18">src/types/common.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Type alias for a stringified big number. SDK tries to be bignumber-lib
+							agnostic so integer values are returned as strings.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="ironbankmarket" class="tsd-anchor"></a>
+					<h3>Iron<wbr>Bank<wbr>Market</h3>
+					<div class="tsd-signature tsd-kind-icon">Iron<wbr>Bank<wbr>Market<span class="tsd-signature-symbol">:</span> <a href="modules.html#asset" class="tsd-signature-type" data-tsd-kind="Type alias">Asset</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;IRON_BANK_MARKET&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L18">src/types/alias.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="ironbankmarketdynamic" class="tsd-anchor"></a>
+					<h3>Iron<wbr>Bank<wbr>Market<wbr>Dynamic</h3>
+					<div class="tsd-signature tsd-kind-icon">Iron<wbr>Bank<wbr>Market<wbr>Dynamic<span class="tsd-signature-symbol">:</span> <a href="interfaces/assetdynamic.html" class="tsd-signature-type" data-tsd-kind="Interface">AssetDynamic</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;IRON_BANK_MARKET&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L20">src/types/alias.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="ironbankmarketstatic" class="tsd-anchor"></a>
+					<h3>Iron<wbr>Bank<wbr>Market<wbr>Static</h3>
+					<div class="tsd-signature tsd-kind-icon">Iron<wbr>Bank<wbr>Market<wbr>Static<span class="tsd-signature-symbol">:</span> <a href="interfaces/assetstatic.html" class="tsd-signature-type" data-tsd-kind="Interface">AssetStatic</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;IRON_BANK_MARKET&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L19">src/types/alias.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="metadata" class="tsd-anchor"></a>
+					<h3>Metadata</h3>
+					<div class="tsd-signature tsd-kind-icon">Metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>IRON_BANK_MARKET<span class="tsd-signature-symbol">: </span><a href="interfaces/ironbankmarketmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">IronBankMarketMetadata</a><span class="tsd-signature-symbol">; </span>VAULT_V1<span class="tsd-signature-symbol">: </span><a href="interfaces/vaultmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">VaultMetadata</a><span class="tsd-signature-symbol">; </span>VAULT_V2<span class="tsd-signature-symbol">: </span><a href="interfaces/vaultmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">VaultMetadata</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/metadata.ts#L53">src/types/metadata.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Key Value representation of metadata names and types.
+							Used mainly to provide correct type-guards for asset types.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>IRON_<wbr>BANK_<wbr>MARKET<span class="tsd-signature-symbol">: </span><a href="interfaces/ironbankmarketmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">IronBankMarketMetadata</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>VAULT_<wbr><wbr>V1<span class="tsd-signature-symbol">: </span><a href="interfaces/vaultmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">VaultMetadata</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>VAULT_<wbr><wbr>V2<span class="tsd-signature-symbol">: </span><a href="interfaces/vaultmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">VaultMetadata</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="typeid" class="tsd-anchor"></a>
+					<h3>Type<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Type<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><a href="modules.html#metadata" class="tsd-signature-type" data-tsd-kind="Type alias">Metadata</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/metadata.ts#L62">src/types/metadata.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Union type of all the existing Metadata types.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="typedmap" class="tsd-anchor"></a>
+					<h3>Typed<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">Typed<wbr>Map&lt;K, V&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/common.ts#L29">src/types/common.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Utility type to describe a map of predefined keys with the same value.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h4>
+						</li>
+						<li>
+							<h4>V</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="usdc" class="tsd-anchor"></a>
+					<h3>Usdc</h3>
+					<div class="tsd-signature tsd-kind-icon">Usdc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/common.ts#L24">src/types/common.ts:24</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Utility type to help distinguish <a href="modules.html#integer">Integer</a>s that represent a USDC (6 dec)
+							value.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vault" class="tsd-anchor"></a>
+					<h3>Vault</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<span class="tsd-signature-symbol">:</span> <a href="modules.html#vaultv1" class="tsd-signature-type" data-tsd-kind="Type alias">VaultV1</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#vaultv2" class="tsd-signature-type" data-tsd-kind="Type alias">VaultV2</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L14">src/types/alias.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vaultdynamic" class="tsd-anchor"></a>
+					<h3>Vault<wbr>Dynamic</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<wbr>Dynamic<span class="tsd-signature-symbol">:</span> <a href="modules.html#vaultv1dynamic" class="tsd-signature-type" data-tsd-kind="Type alias">VaultV1Dynamic</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#vaultv2dynamic" class="tsd-signature-type" data-tsd-kind="Type alias">VaultV2Dynamic</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L16">src/types/alias.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vaultstatic" class="tsd-anchor"></a>
+					<h3>Vault<wbr>Static</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<wbr>Static<span class="tsd-signature-symbol">:</span> <a href="modules.html#vaultv1static" class="tsd-signature-type" data-tsd-kind="Type alias">VaultV1Static</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#vaultv2static" class="tsd-signature-type" data-tsd-kind="Type alias">VaultV2Static</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L15">src/types/alias.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vaultv1" class="tsd-anchor"></a>
+					<h3>Vault<wbr>V1</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<wbr>V1<span class="tsd-signature-symbol">:</span> <a href="modules.html#asset" class="tsd-signature-type" data-tsd-kind="Type alias">Asset</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;VAULT_V1&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L7">src/types/alias.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vaultv1dynamic" class="tsd-anchor"></a>
+					<h3>Vault<wbr>V1Dynamic</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<wbr>V1Dynamic<span class="tsd-signature-symbol">:</span> <a href="interfaces/assetdynamic.html" class="tsd-signature-type" data-tsd-kind="Interface">AssetDynamic</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;VAULT_V1&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L11">src/types/alias.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vaultv1static" class="tsd-anchor"></a>
+					<h3>Vault<wbr>V1Static</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<wbr>V1Static<span class="tsd-signature-symbol">:</span> <a href="interfaces/assetstatic.html" class="tsd-signature-type" data-tsd-kind="Interface">AssetStatic</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;VAULT_V1&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L9">src/types/alias.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vaultv2" class="tsd-anchor"></a>
+					<h3>Vault<wbr>V2</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<wbr>V2<span class="tsd-signature-symbol">:</span> <a href="modules.html#asset" class="tsd-signature-type" data-tsd-kind="Type alias">Asset</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;VAULT_V2&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L8">src/types/alias.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vaultv2dynamic" class="tsd-anchor"></a>
+					<h3>Vault<wbr>V2Dynamic</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<wbr>V2Dynamic<span class="tsd-signature-symbol">:</span> <a href="interfaces/assetdynamic.html" class="tsd-signature-type" data-tsd-kind="Interface">AssetDynamic</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;VAULT_V2&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L12">src/types/alias.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vaultv2static" class="tsd-anchor"></a>
+					<h3>Vault<wbr>V2Static</h3>
+					<div class="tsd-signature tsd-kind-icon">Vault<wbr>V2Static<span class="tsd-signature-symbol">:</span> <a href="interfaces/assetstatic.html" class="tsd-signature-type" data-tsd-kind="Interface">AssetStatic</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">&quot;VAULT_V2&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/yearn/yearn-sdk/blob/4d20b4c/src/types/alias.ts#L10">src/types/alias.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="current ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/zapprotocol.html" class="tsd-kind-icon">Zap<wbr>Protocol</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/context.html" class="tsd-kind-icon">Context</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/earningsinterface.html" class="tsd-kind-icon">Earnings<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/feesinterface.html" class="tsd-kind-icon">Fees<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/ironbankadapter.html" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Adapter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/ironbankinterface.html" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/lensservice.html" class="tsd-kind-icon">Lens<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/oracleservice.html" class="tsd-kind-icon">Oracle<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/registryv2adapter.html" class="tsd-kind-icon">Registry<wbr>V2Adapter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/sdkerror.html" class="tsd-kind-icon">Sdk<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/simulationinterface.html" class="tsd-kind-icon">Simulation<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/strategyinterface.html" class="tsd-kind-icon">Strategy<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/subgraphservice.html" class="tsd-kind-icon">Subgraph<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/telegramservice.html" class="tsd-kind-icon">Telegram<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/tokeninterface.html" class="tsd-kind-icon">Token<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/vaultinterface.html" class="tsd-kind-icon">Vault<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/visionservice.html" class="tsd-kind-icon">Vision<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/yearn.html" class="tsd-kind-icon">Yearn</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/zapperservice.html" class="tsd-kind-icon">Zapper<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountassetposition.html" class="tsd-kind-icon">Account<wbr>Asset<wbr>Position</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accounthistoricearnings.html" class="tsd-kind-icon">Account<wbr>Historic<wbr>Earnings</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountsummary.html" class="tsd-kind-icon">Account<wbr>Summary</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/alias.html" class="tsd-kind-icon">Alias</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/allowance.html" class="tsd-kind-icon">Allowance</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/apy.html" class="tsd-kind-icon">Apy</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/assetdynamic.html" class="tsd-kind-icon">Asset<wbr>Dynamic</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/assetearnings.html" class="tsd-kind-icon">Asset<wbr>Earnings</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/assethistoricearnings.html" class="tsd-kind-icon">Asset<wbr>Historic<wbr>Earnings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/assetstatic.html" class="tsd-kind-icon">Asset<wbr>Static</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/balance.html" class="tsd-kind-icon">Balance</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/chainmetadata.html" class="tsd-kind-icon">Chain<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/contextvalue.html" class="tsd-kind-icon">Context<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cytokenusermetadata.html" class="tsd-kind-icon">Cy<wbr>Token<wbr>User<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/depositoptions.html" class="tsd-kind-icon">Deposit<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/erc20.html" class="tsd-kind-icon">ERC20</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/earningsassetdata.html" class="tsd-kind-icon">Earnings<wbr>Asset<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/earningsdaydata.html" class="tsd-kind-icon">Earnings<wbr>Day<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/earningsuserdata.html" class="tsd-kind-icon">Earnings<wbr>User<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gasprice.html" class="tsd-kind-icon">Gas<wbr>Price</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/historicearnings.html" class="tsd-kind-icon">Historic<wbr>Earnings</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ironbankmarketmetadata.html" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Market<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ironbankusersummary.html" class="tsd-kind-icon">Iron<wbr>Bank<wbr>User<wbr>Summary</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/position.html" class="tsd-kind-icon">Position</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/simulationoptions.html" class="tsd-kind-icon">Simulation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/strategiesmetadata.html" class="tsd-kind-icon">Strategies<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/strategymetadata.html" class="tsd-kind-icon">Strategy<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/token.html" class="tsd-kind-icon">Token</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tokenallowance.html" class="tsd-kind-icon">Token<wbr>Allowance</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tokenamount.html" class="tsd-kind-icon">Token<wbr>Amount</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tokenbalance.html" class="tsd-kind-icon">Token<wbr>Balance</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tokenmetadata.html" class="tsd-kind-icon">Token<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tokenprice.html" class="tsd-kind-icon">Token<wbr>Price</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/transactionoutcome.html" class="tsd-kind-icon">Transaction<wbr>Outcome</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/vaultmetadata.html" class="tsd-kind-icon">Vault<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/vaultmetadataoverrides.html" class="tsd-kind-icon">Vault<wbr>Metadata<wbr>Overrides</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/vaultusermetadata.html" class="tsd-kind-icon">Vault<wbr>User<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/vaultsusersummary.html" class="tsd-kind-icon">Vaults<wbr>User<wbr>Summary</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/withdrawoptions.html" class="tsd-kind-icon">Withdraw<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/zapapprovalstateoutput.html" class="tsd-kind-icon">Zap<wbr>Approval<wbr>State<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/zapapprovaltransactionoutput.html" class="tsd-kind-icon">Zap<wbr>Approval<wbr>Transaction<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/zapoptions.html" class="tsd-kind-icon">Zap<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/zapoutput.html" class="tsd-kind-icon">Zap<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#address" class="tsd-kind-icon">Address</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#aliasmap" class="tsd-kind-icon">Alias<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#apymap" class="tsd-kind-icon">Apy<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#asset" class="tsd-kind-icon">Asset</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#balancesmap" class="tsd-kind-icon">Balances<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#chainid" class="tsd-kind-icon">Chain<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#genericasset" class="tsd-kind-icon">Generic<wbr>Asset</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#icon" class="tsd-kind-icon">Icon</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#iconmap" class="tsd-kind-icon">Icon<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#integer" class="tsd-kind-icon">Integer</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#ironbankmarket" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Market</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#ironbankmarketdynamic" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Market<wbr>Dynamic</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#ironbankmarketstatic" class="tsd-kind-icon">Iron<wbr>Bank<wbr>Market<wbr>Static</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#metadata" class="tsd-kind-icon">Metadata</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#typeid" class="tsd-kind-icon">Type<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#typedmap" class="tsd-kind-icon">Typed<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#usdc" class="tsd-kind-icon">Usdc</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vault" class="tsd-kind-icon">Vault</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vaultdynamic" class="tsd-kind-icon">Vault<wbr>Dynamic</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vaultstatic" class="tsd-kind-icon">Vault<wbr>Static</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vaultv1" class="tsd-kind-icon">Vault<wbr>V1</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vaultv1dynamic" class="tsd-kind-icon">Vault<wbr>V1Dynamic</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vaultv1static" class="tsd-kind-icon">Vault<wbr>V1Static</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vaultv2" class="tsd-kind-icon">Vault<wbr>V2</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vaultv2dynamic" class="tsd-kind-icon">Vault<wbr>V2Dynamic</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vaultv2static" class="tsd-kind-icon">Vault<wbr>V2Static</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
